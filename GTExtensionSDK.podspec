@@ -40,7 +40,8 @@ Pod::Spec.new do |s|
   touch GTExtensionSDK.framework/Modules/module.modulemap
   cat <<-EOF > GTExtensionSDK.framework/Modules/module.modulemap
   framework module GTExtensionSDK {
-      header "GeTuiSdk.h"
+      header "GeTuiExtSdk.h"
+      header "GtExtVoicePlay.h"
       export *
       link "z"
       link "sqlite3.0"
